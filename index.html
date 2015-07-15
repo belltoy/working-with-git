@@ -14,6 +14,14 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slides-area img[alt~=inline] { max-width: 100%; }
+      .remark-slides-area img[alt~=right] { float: right; }
+      .remark-slides-area img[alt~=left] { float: left; }
+      .remark-slides-area img[alt~=50%] { max-width: 50%; }
+      .remark-slides-area img[alt~=gitflow] { max-width: 40%; position: absolute; top: 5%; right: 5% }
+      .remark-slides-area h1#git-flow { width: 50%; }
+      .remark-slides-area h2#a-successful-git-branching-model-2- { width: 50%; }
+      .remark-slides-area #thanks ~ p { visibility: hidden; }
     </style>
   </head>
   <body>
@@ -22,15 +30,9 @@
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          document.getElementById('source').innerHTML = xhr.responseText;
-          var slideshow = remark.create();
-        }
-      }
-      xhr.open("GET", '/working-with-git/working_with_git.md')
-      xhr.send();
+      var slideshow = remark.create({
+        sourceUrl: '/working-with-git/working_with_git.md'
+      });
     </script>
   </body>
 </html>
