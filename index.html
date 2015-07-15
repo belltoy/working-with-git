@@ -31,9 +31,15 @@
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create({
-        sourceUrl: '/working-with-git/working_with_git.md'
-      });
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.getElementById('source').innerHTML = xhr.responseText;
+          var slideshow = remark.create();
+        }
+      }
+      xhr.open("GET", '/working-with-git/working_with_git.md')
+      xhr.send();
     </script>
   </body>
 </html>
