@@ -6,9 +6,10 @@ autoscale: true
 
 ---
 
+![right 50%](https://git-scm.com/images/logos/downloads/Git-Logo-1788C.png)
+
 # What is Git?
 
-![right 50%](https://git-scm.com/images/logos/downloads/Git-Logo-1788C.png)
 
 > git - the stupid content tracker
 -- GIT(1) Manual
@@ -86,7 +87,8 @@ _Storing data as snapshots of the project over time._
 ---
 
 # Areas
-![inline fill](http://appendto.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-24-at-8.37.13-PM-1024x663.png)
+
+![inline](http://appendto.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-24-at-8.37.13-PM-1024x663.png)
 
 ---
 
@@ -267,7 +269,7 @@ $ git commit --amend               # Then we add the file in the last commit!
 
 ## A successful Git branching model[^2]
 
-![right fit](http://nvie.com/img/git-model@2x.png)
+![right fit gitflow](http://nvie.com/img/git-model@2x.png)
 
 ---
 
