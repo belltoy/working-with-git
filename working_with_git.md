@@ -165,6 +165,18 @@ _A branch in Git is simply **a lightweight movable pointer** to one of these com
 
 ---
 
+# Long-Running Branches
+
+![inline](http://git-scm.com/book/en/v2/book/03-git-branching/images/lr-branches-2.png)
+
+---
+
+# Topic Branches
+
+![inline](http://git-scm.com/book/en/v2/book/03-git-branching/images/topic-branches-2.png)
+
+---
+
 # Working with the Remotes
 
 ---
@@ -200,6 +212,50 @@ $ git fetch [remote-name]
 ---
 
 # Remote Branches
+
+- fetch
+- pull
+- push
+- delete remote branch
+
+---
+
+# Tagging
+
+- Listing Your Tags
+- Creating Tags
+- Annotated Tags
+- Lightweight Tags
+- Tagging Later
+- Sharing Tags
+- Checking out Tags
+
+---
+
+# Git Configuration
+
+## `man git-config`
+
+---
+
+# Configuration Files
+
+```
+$(prefix)/etc/gitconfig
+~/.gitconfig
+$GIT_DIR/config
+```
+
+---
+
+# Basic Client Configuration
+
+- `user.name`
+- `user.email`
+- `core.editor`
+- `color.ui`
+- `diff.tool`
+- `merge.tool`
 
 ---
 
